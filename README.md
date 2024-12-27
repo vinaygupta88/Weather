@@ -1,0 +1,2 @@
+# Weather_Prediction
+ A repository for weather prediction using machine learning models to forecast conditions like rain, snow, drizzle, or sunny weather. It includes data preprocessing, feature extraction, model training, and evaluation. Designed for meteorological insights, it supports datasets, algorithms, and visualizations to enhance forecasting accuracy and user understanding of climate trends.
