@@ -2,7 +2,11 @@ services:
   - type: web
     name: weather-predictor
     env: python
-    buildCommand: pip install -r requirements.txt
+    build:
+    commands:
+      - pip install -r requirements.txt
+      - python manage.py collectstatic --noinput
+
     startCommand: gunicorn Weather_Predictor_Project.wsgi
     envVars:
       - key: DJANGO_SETTINGS_MODULE
