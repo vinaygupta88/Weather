@@ -106,12 +106,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
+# settings.py
+
 STATIC_URL = '/static/'
+
+# Local development (when running server locally)
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# For production (to collect static files in one directory for deployment)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'weather_app/static'),
-]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 TEMPLATES[0]['DIRS'] = [os.path.join(BASE_DIR, 'weather_app/templates')]
 
