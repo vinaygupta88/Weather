@@ -1,0 +1,79 @@
+{% extends 'weather_app/base.html' %}
+
+{% block title %}About-Weather Predictor{% endblock %}
+
+{% block content %}
+
+<div class="container text-center" style="margin-top: 100px;">
+    <h2 class="text-warning">About This Project</h2>
+    <p class="lead">
+      Weather affects everything — from what we wear to how businesses operate. <br> 
+      This system uses machine learning to predict weather conditions based on 
+      atmospheric parameters, <br> helping users plan better and stay prepared.
+    </p>
+  
+    <hr style="border-top: 5px solid #fff; width: 80%;border-radius: 10px; margin: 30px auto;">
+  
+    <div class="row text-left" style="color: #f1f1f1;">
+      <div class="col-md-6">
+        <h3 class="text-info">🎯 Project Objective</h3>
+        <p>
+          The main aim of this project is to forecast weather conditions like 
+          Rainy, Sunny, Cloudy, or Snowy using machine learning. By analyzing 
+          features such as temperature, humidity, pressure, and wind speed, 
+          the model provides real-time weather predictions.
+        </p>
+      </div>
+  
+      <div class="col-md-6">
+        <h3 class="text-success">📈 Why It Matters</h3>
+        <p>
+          Weather predictions are crucial for agriculture, transportation, 
+          event planning, and daily decision-making. A smart, ML-based system 
+          offers a quick and accurate alternative to traditional forecasting methods.
+        </p>
+      </div>
+    </div>
+  
+    <br/>
+  
+    <div class="row text-left" style="color: #f1f1f1;">
+      <div class="col-md-4">
+        <h4 class="text-danger">🔍 Features</h4>
+        <ul>
+          <li>ML-powered real-time weather prediction</li>
+          <li>User-friendly and responsive interface</li>
+          <li>Fast processing with instant results</li>
+          <li>Visual output for better understanding</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4 class="text-primary">🌍 Use Cases</h4>
+        <ul>
+          <li>Agricultural forecasting</li>
+          <li>Travel and logistics planning</li>
+          <li>Outdoor event scheduling</li>
+          <li>Personal daily weather tracking</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4 class="text-warning">🛠️ Technologies Used</h4>
+        <ul>
+          <li>Python & Django Framework</li>
+          <li>Machine Learning (Scikit-learn)</li>
+          <li>HTML, CSS, Bootstrap</li>
+        </ul>
+      </div>
+    </div>
+  
+    <br/>
+  
+    <div class="alert  mt-4">
+      <strong>Ready to try it out?</strong>
+       Predict current weather conditions using your own inputs by visiting the
+        <a href="/predict/" class="btn btn-sm btn-primary">Prediction Page</a> !
+    </div>
+  </div>
+  
+
+{% endblock %}

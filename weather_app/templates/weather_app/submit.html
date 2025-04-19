@@ -1,0 +1,40 @@
+{% extends 'weather_app/base.html' %}
+
+{% block title %}Result-Weather Predictor{% endblock %}
+
+{% block content %}
+<div class="container text-center" style="margin-top: 100px;">
+    <h1 class="mb-4 text-warning">Prediction Result</h1>
+    <h3>
+      Based on the given input, the predicted weather is:
+      <span style="color: #00ff99">{{ result|capfirst }}</span>
+    </h3>
+  
+    <hr style="border-top: 5px solid #fff; margin: 30px auto; width: 60%;">
+
+    <p style="font-size: 18px;">
+        This prediction is generated using a machine learning model trained on historical weather data.<br>
+        The result gives a forecast for the weather conditions like <strong style="color: black;">Rainy, Sunny, Cloudy, or Snowy</strong>, based on parameters like temperature, humidity, wind speed, and precipitation.<br>
+        The model aims to provide an accurate and timely prediction to help you plan your day better.
+      </p>
+    
+      <p style="font-size: 18px;">
+        Weather predictions are vital for a variety of reasons. Whether you're planning a picnic, deciding to wear an umbrella, or scheduling outdoor activities, this prediction will give you the insights you need.<br>
+        Accurate weather forecasting helps in better decision-making, from daily personal tasks to large-scale events, making it an essential tool for managing weather-related risks.
+      </p>
+    
+      <p style="font-size: 18px;">
+        This weather prediction system uses advanced algorithms to analyze data collected from various sources, including satellite information, local weather stations, and real-time atmospheric parameters. By understanding these conditions, the model can make precise predictions.<br>
+        The more data you provide, the better the forecast accuracy. It's a smart way to stay ahead of the unpredictable nature of weather and plan your activities accordingly.
+      </p>
+    <br><br>
+  
+    <a href="/predict/" class="btn btn-secondary mt-3">Predict Another</a>
+    <a href="/" class="btn btn-info mt-3">Back to Home</a>
+    <a href="https://vinaygupta88.github.io/Myportfolio/" class="btn btn-success mt-3">Back to Portfolio</a>
+    
+    <hr style="border-top: 5px solid #fff; margin: 30px auto; width: 60%;">
+</div>
+  
+  
+{% endblock %}

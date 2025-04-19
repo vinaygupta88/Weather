@@ -1,0 +1,45 @@
+{% extends 'weather_app/base.html' %}
+
+{% block title %} Weather Predictor{% endblock %}
+
+{% block content %}
+
+<div class="container text-center" style="margin-top: 100px;">
+    <h1 class="display-4 text-warning">Welcome to the Weather Forecasting System</h1>
+    <p class="lead">Predict weather conditions using powerful machine learning models!</p>
+    <p><em>Designed & Developed by <strong>Vinay Gupta</strong></em></p>
+  
+    <hr style="border-top: 5px solid #fff; width: 80%; border-radius: 5px; margin: 30px auto;">
+  
+    <div class="row">
+      <div class="col-md-4">
+        <h3 class="text-info">🌦️ ML-Based Forecast</h3>
+        <p>Our system analyzes key weather parameters to provide real-time, accurate predictions.</p>
+      </div>
+      <div class="col-md-4">
+        <h3 class="text-success">📋 Easy Input</h3>
+        <p>Just enter temperature, humidity, pressure, and wind speed — and get the forecast instantly.</p>
+      </div>
+      <div class="col-md-4">
+        <h3 class="text-danger">🌍 Real-World Impact</h3>
+        <p>Useful for agriculture, travel, logistics, outdoor events, and personal planning.</p>
+      </div>
+    </div>
+  
+    <br/>
+  
+    <div class="jumbotron" style="background-color: rgba(0,0,0,0.5); color: white;border-radius: 10px;">
+      <h2>Why Choose Our Weather Predictor?</h2>
+      <ul class="list-unstyled">
+        <li> Simple and responsive user interface</li>
+        <li> Supports better planning for daily and professional tasks</li>
+        <li> Based on real-world weather data and scientific algorithms</li>
+        <li> Fast and lightweight system — get instant results in seconds</li>
+        <li> Predict conditions like Rain, Sunny, or Snow with a trained ML model</li>
+      </ul>
+      <a href="/predict/" class="btn btn-primary btn-lg mb-3">Start Predicting Weather</a>
+    </div>
+  </div>
+  
+
+{% endblock %}

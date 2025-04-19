@@ -1,0 +1,52 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Weather Predictor{% endblock %}</title>
+    <link rel="icon" href="{% static 'weather_app/image/logo.jpg' %}"  type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'weather_app/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    
+</head>
+  <body>
+    
+    <!--------------------Navbar------------------------->
+    <nav class="navbar fixed-top navbar-expand-lg bg-secondary ">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-2" href="/"><strong class="text-dark">🌧️ Weather Predictor</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-2" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/predict/">Predict</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+ <!-------------------- Main Content ---------------------->
+    
+        {% block content %}
+        
+        {% endblock %}
+   
+<!---------------- Footer -------------->
+    <footer>
+        <p>&copy; 2025 Weather Predictor | Developed by 
+            <a href="https://vinaygupta88.github.io/Myportfolio/" target="_blank" style="color: #00ccff; text-decoration: none;">Vinay
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
