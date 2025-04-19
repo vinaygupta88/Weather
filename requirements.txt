@@ -1,5 +1,6 @@
-Django
+Flask
 gunicorn
 scikit-learn
-numpy
 pandas
+numpy
+xgboost
